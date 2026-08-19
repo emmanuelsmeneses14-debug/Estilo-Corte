@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home- Estilo & Corte</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="barber-stripe"></div>
+   <header>
+    <div class="header-container">
+        <div class="logo-area">
+            <img src="img/logo.png" alt="Logo Estilo & Corte" class="logo-img" style="height: 50px; width: auto; object-fit: contain;">
+            <h2>ESTILO & CORTE</h2>
+        </div>
+        <input type="checkbox" id="menu-bar" class="menu-bar">
+        <label for="menu-bar" class="menu-button" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="productos.html" class="active">PRODUCTOS</a></li>
+                <li><a href="encuentranos.html">UBICACIÓN</a></li>
+                <li><a href="reservas.html">CITAS</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <div style="background-color: var(--navy-header); color: white; padding: 25px; border-radius: 8px; text-align: center; margin-bottom: 25px;">
+            <h1 style="color: var(--gold-accent);">BIENVENIDO, CARLOS</h1>
+            <p>Panel de control de usuario y gestión de servicios</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+
+          <div class="card" style="border-top: 4px solid var(--gold-accent); text-align: left;">
+    <h3 style="color: var(--navy-header); margin-bottom: 10px;">PRÓXIMA CITA</h3>
+    <div style="background-color: #f1f5f9; padding: 15px; border-radius: 6px; font-weight: bold; color: var(--navy-header); display: flex; align-items: center; gap: 10px;">
+        <i class="fa-solid fa-calendar-days" style="color: var(--gold-accent); font-size: 1.2rem;"></i>
+        <span>24/05/2026 - 10:00 AM</span>
+    </div>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #555;">Servicio: Corte + Perfilado de Barba</p>
+    <p style="font-size: 0.9rem; color: #555;">Barbero: Mateo</p>
+</div>
+
+            <div class="card" style="border-top: 4px solid var(--navy-header); text-align: left;">
+                <h3 style="color: var(--navy-header); margin-bottom: 10px;">HISTORIAL DE SERVICIOS</h3>
+                <ul style="list-style: none; font-size: 0.9rem;">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                        <span>Corte Tradicional</span> <strong>$35.000</strong>
+                    </li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                        <span>Afeitado con Navaja</span> <strong>$7.000</strong>
+                    </li>
+                    <li style="padding: 8px 0; display: flex; justify-content: space-between;">
+                        <span>Combo Completo</span> <strong>$50.000</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 25px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            <div class="card" style="background-color: #eff6ff;">
+                <h3>PRODUCTOS EXCLUSIVOS</h3>
+                <p style="font-size: 0.85rem; margin: 10px 0;">Aprovecha tus puntos de cliente frecuente en la tienda.</p>
+                <a href="productos.html" class="btn-gold" style="font-size: 0.8rem;">VER TIENDA</a>
+            </div>
+            <div class="card" style="background-color: #fefce8;">
+                <h3>OFERTAS EXCLUSIVAS</h3>
+                <p style="font-size: 0.85rem; margin: 10px 0;">20% de descuento en tratamientos capilares los martes.</p>
+                <a href="reservas.html" class="btn-gold" style="font-size: 0.8rem;">AGENDAR AHORA</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Estilo & Corte - Barbería Colombia.</p>
+    </footer>
+    <div class="barber-stripe"></div>
+
+</body>
+</html>

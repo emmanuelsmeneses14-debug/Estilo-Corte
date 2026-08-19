@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Online - Estilo & Corte</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="barber-stripe"></div>
+   <header>
+    <div class="header-container">
+        <div class="logo-area">
+            <img src="img/logo.png" alt="Logo Estilo & Corte" class="logo-img" style="height: 50px; width: auto; object-fit: contain;">
+            <h2>ESTILO & CORTE</h2>
+        </div>
+        <input type="checkbox" id="menu-bar" class="menu-bar">
+        <label for="menu-bar" class="menu-button" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="productos.html" class="active">PRODUCTOS</a></li>
+                <li><a href="encuentranos.html">UBICACIÓN</a></li>
+                <li><a href="reservas.html">CITAS</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <h2 style="text-align: center; color: var(--navy-header); margin-bottom: 20px; font-size: 1.8rem;">RESERVA ONLINE</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+           
+            <div class="card" style="background-color: var(--navy-header); color: white;">
+                <h3 style="color: var(--gold-accent); margin-bottom: 15px;">SELECCIONAR FECHA</h3>
+                <input type="date" value="2026-05-24" style="width: 100%; padding: 12px; font-size: 1rem; border-radius: 4px; border: none; text-align: center; margin-bottom: 15px;">
+                <p style="font-size: 0.85rem; color: #cbd5e1;">Horarios disponibles actualizados en tiempo real.</p>
+            </div>
+
+           
+            <div class="card" style="text-align: left;">
+                <form action="Home.html" method="GET">
+                    <h3 style="color: var(--navy-header); margin-bottom: 10px;">SELECCIONAR SERVICIO</h3>
+                    <div style="margin-bottom: 15px; display: flex; flex-direction: column; gap: 8px;">
+                        <label><input type="radio" name="servicio" checked> Corte Tradicional</label>
+                        <label><input type="radio" name="servicio"> Perfilado de Barba</label>
+                        <label><input type="radio" name="servicio"> Combo Corte + Barba</label>
+                    </div>
+
+                    <h3 style="color: var(--navy-header); margin-bottom: 10px;">SELECCIONAR BARBERO</h3>
+                    <select style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid var(--border-color);">
+                        <option>Mateo (Master Barber)</option>
+                        <option>Carlos (Especialista en Barba)</option>
+                        <option>David (Cortes Clásicos)</option>
+                        <option>Cristian (Especialista en tintura)</option>
+                        <option>Stiven (Cortes modernos)</option>
+                    </select>
+                <h3 style="color: var(--navy-header); margin-bottom: 10px;">HORA DE LA CITA</h3>
+                <div style="margin-bottom: 20px;">
+                    <div style="position: relative; display: flex; align-items: center;">
+                        <i class="fa-solid fa-clock" style="position: absolute; left: 12px; color: var(--gold-accent); font-size: 1.1rem; pointer-events: none;"></i>
+                        <input type="time" name="hora" required value="09:00" style="width: 100%; padding: 12px 12px 12px 40px; border: 1px solid var(--border-color); border-radius: 6px; font-size: 1rem; font-weight: bold; color: var(--navy-header); background-color: #f4f4f6; cursor: pointer;">
+                    </div>
+                    <small style="color: #666; font-size: 0.78rem; display: block; margin-top: 5px;">
+                        Haz clic para abrir el reloj y seleccionar la hora exacta.
+                    </small>
+                </div>
+
+                    <button type="submit" class="btn-gold" style="width: 100%;">CONFIRMAR CITA</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Estilo & Corte - Barbería Colombia.</p>
+    </footer>
+    <div class="barber-stripe"></div>
+
+</body>
+</html>
